@@ -530,7 +530,7 @@ print('No. of sites with the reverse complement (if asymmetrical) motif ' + moti
 i = 0
 
 # Difference in between sister pairs modifications
-pos_diff = (motif_len - (a_offset + 1)) - a_offset 
+pos_diff = abs( (motif_len - (a_offset + 1)) - a_offset )
 
 # Empty list for rows to delete
 partner_sites = []
