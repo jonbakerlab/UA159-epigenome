@@ -519,7 +519,10 @@ motif_df = consensus_df[
 
 # Determine and print the number of positions that have the given motif (and reverse complement)
 motif_count = motif_df[motif_df['Sequence'].str.slice(motif_start, motif_end).str.match(motif)].shape[0]
-motif_rev_count = motif_df[motif_df['Sequence'].str.slice(motif_start, motif_end).str.match(motif_rc)].shape[0]
+motif_rev_count = motif_df[
+    motif_df['Sequence'].str.slice(motif_start, motif_end).str.match(motif_rc) &
+    ~motif_df['Sequence'].str.slice(motif_start, motif_end).str.match(motif)
+].shape[0]
 print('No. of methylation sites: '+ str(consensus_df.shape[0]))
 print('No. of sites with the motif ' + motif + ': '+ str(motif_count))
 print('No. of sites with the reverse complement (if asymmetrical) motif ' + motif_rc + ': '+ str(motif_rev_count))
@@ -564,7 +567,10 @@ print('No. of fully-methylated sites: ' +  str(fully.shape[0]))
 # %% --- Now what if we want to look at the modification sites that are hemi-methylated, i.e., don't have a pair --- %%
 hemi = motif_df.drop(partner_sites)
 hemi_count = hemi[hemi['Sequence'].str.slice(motif_start, motif_end).str.match(motif)].shape[0]
-hemi_rev_count = hemi[hemi['Sequence'].str.slice(motif_start, motif_end).str.match(motif_rc)].shape[0]
+hemi_rev_count = hemi[
+    hemi['Sequence'].str.slice(motif_start, motif_end).str.match(motif_rc) & 
+    ~hemi['Sequence'].str.slice(motif_start, motif_end).str.match(motif)
+].shape[0]
 print('No. of forward hemi-methylated sites: ' + str(hemi_count))
 print('No. of reverse hemi-methylated sites (if asymmetrical): ' + str(hemi_rev_count))
 
