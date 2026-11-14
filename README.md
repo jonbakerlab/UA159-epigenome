@@ -17,5 +17,3 @@ The numbered directories describe the analysis from basecalling through visualiz
 9. [Generating Circos plots](09-generating-circos-plots/) - Visualize the genomic distribution of modification sites.
 
 Start with the individual section READMEs for commands, dependencies, and input requirements. Basecalling is computationally intensive and uses GPUs; examples and paths may need to be adapted to your data and computing environment.
-
-The separate [Bacterial Modifications Workflow](Bacterial-Modifications-Workflow.md) provides a broader step-by-step guide; its examples may use different software and model versions from the numbered sections.
