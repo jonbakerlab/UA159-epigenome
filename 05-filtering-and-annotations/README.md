@@ -1,5 +1,11 @@
 # 05. Data filtering and annotations
-Despite using the `--filter-threshold` flag when running `modkit`, the output bedMethyl file still contains a lot of noise. Preliminary results in the bedMethyl file can be further filtered down using python. The following python script can be used to filter, organize, and export the methylation data in a `.tsv` file format (note that `pandas` is required to run this script):
+### Python packages required for this section
+| Package | version used |
+|---------|--------------|
+| pandas | v2.2.3 |
+
+***
+Despite using the `--filter-threshold` flag when running `modkit`, the output bedMethyl file still contains a lot of noise. Preliminary results in the bedMethyl file can be further filtered down using python. The following python script can be used to filter, organize, and export the methylation data in a `.tsv` file format:
 * `filter-pileup.py`
 
 Run the python script:
