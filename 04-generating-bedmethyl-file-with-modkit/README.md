@@ -14,7 +14,7 @@ modkit --version
 
 Run `pileup` to generate a bedMethyl file from the `.mapped.bam` file. A bedMethyl file is a `.bed` file containing the potential base modification sites on a single-nucleotide resolution.
 ```sh
-modkit pileup -t 12 barcode01.mapped.bam pileup.bed -r {ref.fna} --filter-threshold 0.75
+modkit pileup -t 12 {.mapped.bam} pileup.bed -r {ref.fna} --filter-threshold 0.75
 ```
 ***
 ### Additional information
