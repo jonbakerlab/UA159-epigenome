@@ -34,7 +34,7 @@ Start with the individual section READMEs for commands, dependencies, and input 
 | bwa-mem2 | 2.2.1 |
 | subread featurCounts | 2.0.6 |
 | modkit |  0.6.4 |
-| snippy | annotating modBAM files | 4.6.0 |
+| snippy | 4.6.0 |
 
 | **Python packages** | **Version** |
 |---------------------|-------------|
