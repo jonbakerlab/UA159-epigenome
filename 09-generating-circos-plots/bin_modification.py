@@ -3,8 +3,8 @@ import csv
 from collections import defaultdict
 
 # === USER INPUT ===
-input_file = "../CGAN7TCY_methylation_sites.tsv"   # Your input TSV file
-output_file = "./data/UA159_CGAN7TCY_methylation_density.txt"  # Output file for Circos
+input_file = "{modification_sites.tsv}"   # Your input TSV file; must be a TSV in a bedMethyl format
+output_file = "{modification_density.txt}"  # Output file for Circos
 genome_length = 2032925                     # Replace with your genome length
 bin_size = 1000                            # Size of each bin in bp
 chromosome_id = "smutans"                  # Must match your karyotype.txt
