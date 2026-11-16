@@ -17,3 +17,28 @@ The numbered directories describe the analysis from basecalling through visualiz
 9. [Generating Circos plots](09-generating-circos-plots/) - Visualize the genomic distribution of modification sites.
 
 Start with the individual section READMEs for commands, dependencies, and input requirements. Basecalling is computationally intensive and uses GPUs; examples and paths may need to be adapted to your data and computing environment.
+
+## Software
+| **Tool** | **Version** |
+|----------|------------------|
+| dorado | 1.4.0-linux-x64 |
+| conda | 24.11.3 |
+| python | 3.12.3 |
+| R | 4.5.2 |
+| circos | 0.69-8 |
+
+| **Conda Packages** | **Version** |
+|--------------------|------------------|
+| samtools | 1.21 |
+| minimap2 | 2.28-r120 |
+| bwa-mem2 | 2.2.1 |
+| subread featurCounts | 2.0.6 |
+| modkit |  0.6.4 |
+| snippy | annotating modBAM files | 4.6.0 |
+
+| **Python packages** | **Version** |
+|---------------------|-------------|
+| pandas | 2.2.3 |
+| biopython | 1.85 |
+| logomaker | 0.8.7 |
+| matplotlib | 3.10.0 |
