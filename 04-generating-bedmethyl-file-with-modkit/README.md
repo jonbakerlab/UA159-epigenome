@@ -1,4 +1,6 @@
 # 04. Generating a bedMethyl file via modkit
+**Placeholder variables are denoted by the `{}` and must be replaced by an appropriate file path or value.**
+
 Official documentation for ONT's `modkit` can be found [here](https://nanoporetech.github.io/modkit/). `modkit` can be installed according to the documentation, or it can be installed in a conda environment via the following commands:
 1. Create and activate a new `conda` environment
 ```sh
@@ -17,8 +19,9 @@ Run `pileup` to generate a bedMethyl file from the `.mapped.bam` file. A bedMeth
 ```sh
 modkit pileup -t {threads} {.mapped.bam} pileup.bed -r {ref.fna} --filter-threshold 0.75
 ```
-***
-### Additional information
+The thread count `-t` can be adjusted as needed.
+
+## Additional information
 The bedMethyl file does not have any headers to the columns, however, their meaning can be deciphered using the `modkit` documentation linked above. It is important to note that the 4th column is the identified for what the modification was detected, however they have their own ID nomenclature for denoting the modifications. Here, looking at the methylation modifications specifically, they are as follows:
 
 | Modification | Code | Description |
