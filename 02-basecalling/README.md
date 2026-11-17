@@ -1,7 +1,11 @@
 # 02. Basecalling `.pod5` files using `dorado basecaller`
 `dorado basecaller` basecalls the POD5 files, which contains the raw electrical signals measured by the nanopore sequencer, and outputs it into a **single** `.bam` file format. Note that **`dorado basecaller` utilizes GPUs to run.** With the `--modified-bases-models` flag, the `.bam` file will contain MM/ML values of modified bases of the provided models known as a `modBAM` file.
 
-Assuming multiple samples were run on single flow cell run, all samples are multiplexed in the single `.bam` output file and therefore must be demultiplexed using `dorado demux`. Here, the sequencing library prep kit name (SQK-NBD114-24) must be provided for the `--kit-name` argument to identify the unique barcodes and demultiplex the samples based on that. The basecalling pipeline can be found in the `sbatch_nativeDNA_basecall_mods.sh` script.
+Assuming multiple samples were run on single flow cell run, all samples are multiplexed in the single `.bam` output file and therefore must be demultiplexed using `dorado demux`. Here, the sequencing library prep kit name (SQK-NBD114-24) must be provided for the `--kit-name` argument to identify the unique barcodes and demultiplex the samples based on that. The basecalling pipeline can be found in the bash script:
+
+* `sbatch_nativeDNA_basecall_mods.sh`
+
+**Note that file paths (denoted by `path/to`) must be properly adjusted in the bash script per use case.**
 
 ## Additional information
 ### Troubleshooting `dorado`
