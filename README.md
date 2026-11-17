@@ -8,7 +8,7 @@ The numbered directories describe the analysis from basecalling through visualiz
 
 1. [Installing Dorado and basecalling models](01-installing-dorado-and-basecalling-models/) - Install Dorado and the basecalling and modified-base models.
 2. [Basecalling](02-basecalling/) - Basecall POD5 files with modified-base models and demultiplex samples.
-3. [Mapping and annotating](03-mapping-and-annotating/) - Map reads to a reference genome while retaining modification tags.
+3. [Mapping modBAM files](03-mapping-and-annotating/) - Map reads to a reference genome while retaining modification tags.
 4. [Generating a bedMethyl file with modkit](04-generating-bedmethyl-file-with-modkit/) - Summarize modification calls from mapped reads.
 5. [Filtering and annotations](05-filtering-and-annotations/) - Filter modification calls and annotate their genomic locations.
 6. [Motif identification](06-motif-identification/) - Identify modification-associated sequence motifs with modkit.
