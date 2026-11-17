@@ -15,7 +15,7 @@ conda install -c conda-forge -c bioconda ont-modkit
 
 3. Verify it was installed properly by running `modkit --version`
 
-Run `pileup` to generate a bedMethyl file from the `.mapped.bam` file. A bedMethyl file is a `.bed` file containing the potential base modification sites on a single-nucleotide resolution.
+Run `pileup` to generate a bedMethyl file from the `.mapped.bam` file. A bedMethyl file is a `.bed` file containing the potential base modification sites on a **single-nucleotide resolution**.
 ```sh
 modkit pileup -t {threads} {.mapped.bam} pileup.bed -r {ref.fna} --filter-threshold 0.75
 ```
