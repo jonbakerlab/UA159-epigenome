@@ -1,5 +1,5 @@
 # 03. Mapping modBAM files
-**Placeholder variables are denoted by the `{}` and must be replaced by the path to the appropriate file.**
+**Placeholder variables are denoted by the `{}` and must be replaced by an appropriate file path or value.**
 1. Convert the `.bam` to a `.fast` using `samtools`: 
 ```sh
 samtools fastq {.bam} -T MM,ML > {.fastq}
