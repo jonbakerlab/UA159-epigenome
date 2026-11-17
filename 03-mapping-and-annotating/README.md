@@ -9,9 +9,9 @@ The `-T MM,ML` flag retains all modification base types and probability informat
 
 2. Map the `.fastq` to a `.mapped.bam` file using a pipeline of `minimap2` and `samtools`: 
 ```sh
-minimap2 -t 12 --secondary=no -ax map-ont -y {ref.fna} {.fastq} | \
+minimap2 -t {threads} --secondary=no -ax map-ont -y {ref.fna} {.fastq} | \
 samtools view -b | \
-samtools sort -@ 12 -o {.mapped.bam}
+samtools sort -@ {threads} -o {.mapped.bam}
 ```
 The `-t` and `-@` flags for `minimap2` and `samtools`, respectively, are for thread counts; these can be adjusted as needed.
 
@@ -19,5 +19,3 @@ The `-t` and `-@` flags for `minimap2` and `samtools`, respectively, are for thr
 ```
 samtools index {.mapped.bam}
 ```
-
-## Additional Information
