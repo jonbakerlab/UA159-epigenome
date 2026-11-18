@@ -1,6 +1,5 @@
 # 05. Data filtering and annotations
-**Placeholder variables are denoted by the `{}` and must be replaced by an appropriate file path or value.**
-
+**Placeholder variables are bracketed (`{}`) and must be replaced by an appropriate file path or value.**
 
 1. Further filter, organize, and export the bedMethyl file into a `.tsv` file format using...
   * `filter-pileup.py`
