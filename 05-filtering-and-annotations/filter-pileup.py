@@ -40,7 +40,7 @@ bedMethyl_df['Position'] = bedMethyl_df['Position'] + 1
 # %% Filter rows from the DataFrame based on the "Total_coverage" and "Percent_modified" values and export the results
 # Create a dictionary for the methylation modifications and their assiciated IDs
 # Add more modifications if needed
-modifications = ["a", "m", "21839"]
+modifications = ["a", "m", "21839"] # SAM modification codes
 modification_names = {
     "a": "6mA",
     "m": "5mC",
