@@ -10,7 +10,7 @@ The `fully-hemi-methylation.py` script takes a +/- 12 base pair window surroundi
 A few notes on the input variables for this script:
 * `{motif}` is an input variable that requires a string of text for the motif sequence of interest.
   - Ex: `GATC`
-* `{mod_offset}` is an input variable that requires an **integer value** for the position of the modification site in the motif string in a **0-based indexing system**. This is also the same value as the `offset` value in the `modkit_motifs.tsv` file exported by `modkit find-motif`.
+* `{mod_offset}` is an input variable that requires an **integer value** for the position of the modification site in the motif string in a **0-based indexing system**. This is also the same value as the `offset` value in the `modkit_motifs.tsv` file exported by `modkit find-motifs`.
   - Ex: For the input motif sequence `GATC`, the `{mod_offset}` for the methylated "A" is `1`.
 
 
@@ -20,4 +20,12 @@ python fully-hemi-methylation.py {.tsv} {ref.fna} {motif} {mod_offset}
 ```
 
 ### Additional information
-This script also has the capacity to export `.tsv` files of all of the methylation sites with the extracted sequence (`df`), all of the methylation sites filtered by the motif provided (`df_motif`), or which of those remaining methylation sites are fully-methylated (`df_fully`) or hemi-methylated (`df_hemi`). To do this, simply remove the commenting symbol, `#`, next to the `.to_csv` line of code to export the `.tsv` of interest.
+This script also has the capacity to export additional `.tsv` files. To do this, simply remove the commenting symbol, `#`, from...
+* **Line 260**: Export `methylation_sites_sequences.tsv`
+  - A `.tsv` containing all of the methylation sites with the surrounding base pair sequence.
+* **Line 263**: Export `motif_methylation_sites.tsv`
+  - A `.tsv` containing all of the methylation sites that were associated with the provided motif sequence.
+* **Line 266**: Exports `fully-methylated_sites.tsv`
+  - A `.tsv` containing of the methylation sites associated with the motif which are considered fully-methylated.
+* **Line 267**: Exports `hemi-methylated_sites.tsv`
+  - A `.tsv` containing the methylation sites associated with the motif which are considered hemi-methylated.
