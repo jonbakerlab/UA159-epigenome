@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # %% --- Argeparse preamble --- %%
 
-parser = argparse.ArgumentParser(description="Generates a consensus logo of all of the bases surrounding modification sites identified")
+parser = argparse.ArgumentParser(description="Generates a sequence logo of all of the bases surrounding modification sites identified")
 parser.add_argument("input1", help="Provide the path to the annotation table TSV file, e.g., annotated_table_6mA.tsv")
 parser.add_argument("input2", help="Provide the path to the FASTA file (FA or FNA file okay)")
 parser.add_argument("input3", help="Provide the strain name, e.g., UA159")
@@ -57,19 +57,19 @@ for row_index in range(0, df.shape[0]):
     df.loc[row_index, 'Sequence'] = window_seq
 
 # Filter out all the Data Frame such that all of the positions have the same sequence string length
-consensus_df = df[(df["Sequence"].apply(len) == ((window_size * 2) - 1) )].reset_index(drop=True)
+sequence_df = df[(df["Sequence"].apply(len) == ((window_size * 2) - 1) )].reset_index(drop=True)
 
-# %% --- Create the consensus logo of every methylation site --- %%
-sequences = consensus_df['Sequence'].values
+# %% --- Create the sequence logo of every methylation site --- %%
+sequences = sequence_df['Sequence'].values
 
 # Create a count matrix
 counts_df = logomaker.alignment_to_matrix(sequences)
 
 # Plot title
-title = "Consensus Logo: " + strain
+title = "Sequence Logo: " + strain
 
 # Plot logo
 plt.figure(figsize=(10, 4))
 logo = logomaker.Logo(counts_df)
 plt.title(title)
-plt.savefig(strain + "_consensus_logo.pdf")
+plt.savefig(strain + "_sequence_logo.pdf")
