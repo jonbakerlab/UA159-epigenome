@@ -1,4 +1,6 @@
 # 06. Identifying modification motifs via modkit
+**Placeholder variables are denoted by the `{}` and must be replaced by an appropriate file path or value.**
+
 `modkit find-motifs` is a function of modkit that uses a machine learning algorithm to tease out different motifs in a reference genome given modifications found in the bedMethyl file. This function exports a `.tsv` containing all identified motifs. **The depth of the sequencing heavily impacts the likelihood of a motif being identified and reported**. This command can be executed as follows (thread count `-t` can be adjusted as needed):
 
 ```sh
