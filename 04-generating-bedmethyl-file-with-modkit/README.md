@@ -1,5 +1,5 @@
 # 04. Generating a bedMethyl file via modkit
-**Placeholder variables are denoted by `{}` and must be replaced by an appropriate file path or value.**
+**Placeholder variables are bracketed (`{}`) and must be replaced by an appropriate file path or value.**
 
 Official documentation for ONT's `modkit` can be found [here](https://nanoporetech.github.io/modkit/). `modkit` can be installed according to the documentation, or it can be installed in a conda environment via the following commands:
 1. Create and activate a new `conda` environment
