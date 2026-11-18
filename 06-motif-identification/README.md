@@ -2,7 +2,7 @@
 `modkit find-motifs` is a function of modkit that uses a machine learning algorithm to tease out different motifs in a reference genome given modifications found in the bedMethyl file. This function exports a `.tsv` containing all identified motifs. **The depth of the sequencing heavily impacts the likelihood of a motif being identified and reported**. This command can be executed as follows (thread count `-t` can be adjusted as needed):
 
 ```sh
-modkit find-motifs -t 12 --in-bedmethyl pileup.bed --ref {ref.fna} -o modkit_motifs.tsv
+modkit find-motifs -t {threads} --in-bedmethyl {bedMethyl.bed} --ref {ref.fna} -o modkit_motifs.tsv
 ```
 ***
 ### Additional information
