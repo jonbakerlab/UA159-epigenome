@@ -41,7 +41,7 @@ python annotate-tsv.py {.tab} snippy/{.tab}
 ## Additional information
 The script `filter-pileup.py` is coded to **only** identify 4mC, 5mC, and 6mA modifications. However by modulating lines 43 and 44, it can accommodate any modification basecalled, provided the proper SAM code (see the [04 Additional information section](04-generating-bedmethyl-file-with-modkit/) for for more information of SAM codes). For example, if 5-Hydroxymethylcytosine modifications were also basecalled, lines 43 and 44 would be adjusted as such:
 ```py
-modifications = ["a", "m", "21839", "h"]
+modifications = ["a", "m", "21839", "h"] # SAM modification codes
 modification_names = {
     "a": "6mA",
     "m": "5mC",
