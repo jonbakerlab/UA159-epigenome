@@ -1,4 +1,6 @@
 # 09. Generating circos plots
+**Placeholder variables are bracketed (`{}`) and must be replaced by an appropriate file path or value.**
+
 Circos is a handy program that can be helpful for generating circular density plots of modification sites. This section provides as helpful documentation on how to generate a simple density circos plot.
 
 ### Installing circos
