@@ -41,9 +41,10 @@ Circos is a handy program that can be helpful for generating circular density pl
 A few files are needed in order to run a circos plot:
 1. `karyotype.txt`
     * This is a `.txt` file that is used as the framework for the plot which contains the chromosome name/number, species, and length of the genome. For example, the text below is what the file would look like for *S. mutans*
-        
-    `chr - smutans smutans 0 2032925 black`
-
+    ```    
+    chr - smutans smutans 0 2032925 black`
+    ```
+    
     **Note that this example is of a bacterial genome, i.e., only one chromosome is present and hence the 'chr' name for the chromosome. For a genome containing more than one chromosome (e.g. eukaryotes), numbering the chromosomes is required for the karyotype file to work.**
 
 2. `density.txt`
