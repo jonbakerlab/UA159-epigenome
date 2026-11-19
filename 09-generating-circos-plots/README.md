@@ -1,17 +1,17 @@
-# 09. Generating circos plots
+# 09. Generating Circos plots
 
 Circos is a handy program that can be helpful for generating circular density plots of modification sites.This section provides as helpful documentation on how to generate a simple density circos plot.
  
 ![Example Circos plot](/09-generating-circos-plots/circos_plot_example.png)
 
 ### Installing circos
-1. Download circos on a **local** computer
+1. Download Circos on a **local** computer
     * Go to the [Circos Documentation](https://circos.ca/software/download/) to download the most recent version of circos. For example, at the time of writing this document, the most recent version is `circos-0.69-10.tgz`.
     * Once downloaded, run the following line of code to install it, creating a directory `circos-0.69-10/`:
     ```sh
     tar xzf circos-0.69-10.tgz
     ```
-    **Note that circos must be run with `zsh` rather than `bash` due to some dependencies. Therefore, make sure operate circos in a `zsh` terminal window.**
+    **Note that Circos must be run with `zsh` rather than `bash` due to some dependencies. Therefore, make sure operate circos in a `zsh` terminal window.**
     
 2. Test `circos` to make sure everything runs properly:
     ```sh
@@ -56,5 +56,11 @@ A few files are needed in order to run a circos plot:
     ```
     This file can be generated using the python code `bin_modification.py` that takes a modification table `.tsv` as an input file and automatically generate a `density.txt`.
 
-3. `circos.conf`
-    * Finally, circos runs and generates a plot via interpreting a configuration file `.conf`, which in essensce is a file with text formatted in its own language to generate highly customizable plots. A file is provided to create a density plot of the methylation sites found in *S. mutans*, however this can be used as a template to modify and change parameters according to the specific needs.
+4. `circos.conf`
+    * Finally, Circos runs and generates a plot via interpreting a configuration file `.conf`, which in essence is a file with text formatted in its own language to generate highly customizable plots. A file is provided (`circos_example.conf`) to create three concentric density plot of the methylation sites found in *S. mutans*. This file is can be used as a template with comments, denoted by `#`, to help guide users to modulate and change the circos plot as needed.
+
+### Run Circos
+```sh
+circos-0.69-10/bin/circos -conf {.conf}
+```
+This will export a `.png` and `.svg` of the generated circos plot.
