@@ -1,4 +1,6 @@
 # 10. RNAseq analysis using deseq2
+**Placeholder variables are bracketed (`{}`) and must be replaced by an appropriate file path or value.**
+
 RNAseq is a powerful tool that can investigate differentially expressed genes between different samples. This is a step-by-step process on how to take raw `.fastq` files from a sequencing run, into a compatible gene-expression-matrix format for deseq2.
 
 ## Mapping the sequencing data
@@ -34,7 +36,7 @@ srun --cpus-per-task 4 featureCounts \
     -O \
     -M \
     --primary \
-    -T 10 \
+    -T {threads} \
     -o featureCounts.txt \
     *.mapped.bam
 ```
