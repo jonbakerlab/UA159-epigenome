@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # === USER INPUT ===
 input_file = "{modification_sites.tsv}"   # Your input TSV file; must be a TSV in a bedMethyl format
-output_file = "{modification_density.txt}"  # Output file for Circos
+output_file = "{density.txt}"  # Output file for Circos
 genome_length = 2032925                     # Replace with your genome length
 bin_size = 1000                            # Size of each bin in bp
 chromosome_id = "smutans"                  # Must match your karyotype.txt
