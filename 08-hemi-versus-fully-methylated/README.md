@@ -1,4 +1,4 @@
-# 08. Elucidating fully- and fully-methylated sites
+# 08. Elucidating fully- and hemi-methylated sites
 **Placeholder variables are bracketed (`{}`) and must be replaced by an appropriate file path or value.**
 
 Because of the complementing nature of the forward and reverse strands in DNA, a motif sequence on the forward strand is also found on the reverse strand. This leads to the possibility of a methylation site of a given motif on the forward strand having a pairing methylation site on the reverse strand motif sequence. This can be referred to as fully-methylation and hemi-methylation:
