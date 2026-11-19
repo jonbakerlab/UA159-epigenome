@@ -13,8 +13,9 @@ The numbered directories describe the analysis from basecalling through visualiz
 5. [Filtering and annotations](05-filtering-and-annotations/) - Filter modification calls and annotate their genomic locations.
 6. [Motif identification](06-motif-identification/) - Identify modification-associated sequence motifs with modkit.
 7. [Constructing sequence logos](07-constructing-sequence-logos/) - Visualize sequence context around modification sites.
-8. [Hemi- versus fully methylated sites](08-hemi-versus-fully-methylated/) - Compare methylation at paired sites on opposite strands.
+8. [Fully- vs hem- methylated sites](08-hemi-versus-fully-methylated/) - Compare methylation at paired sites on opposite strands.
 9. [Generating Circos plots](09-generating-circos-plots/) - Visualize the genomic distribution of modification sites.
+10. [RNAseq via deseq2](10-RNAseq-via-deseq2/) - Analyze differentially expressed genes between samples using deseq2.
 
 Start with the individual section READMEs for commands, dependencies, and input requirements. Basecalling is computationally intensive and uses GPUs; examples and paths may need to be adapted to your data and computing environment.
 
@@ -42,3 +43,6 @@ Start with the individual section READMEs for commands, dependencies, and input 
 | biopython | 1.85 |
 | logomaker | 0.8.7 |
 | matplotlib | 3.10.0 |
+
+## Acknowledgements
+
