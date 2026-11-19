@@ -13,7 +13,7 @@ The numbered directories describe the analysis from basecalling through visualiz
 5. [Filtering and annotations](05-filtering-and-annotations/) - Filter modification calls and annotate their genomic locations.
 6. [Motif identification](06-motif-identification/) - Identify modification-associated sequence motifs with modkit.
 7. [Constructing sequence logos](07-constructing-sequence-logos/) - Visualize sequence context around modification sites.
-8. [Fully- vs hem- methylated sites](08-hemi-versus-fully-methylated/) - Compare methylation at paired sites on opposite strands.
+8. [Fully- vs hemi- methylated sites](08-hemi-versus-fully-methylated/) - Compare methylation at paired sites on opposite strands.
 9. [Generating Circos plots](09-generating-circos-plots/) - Visualize the genomic distribution of modification sites.
 10. [RNAseq via deseq2](10-RNAseq-via-deseq2/) - Analyze differentially expressed genes between samples using deseq2.
 
