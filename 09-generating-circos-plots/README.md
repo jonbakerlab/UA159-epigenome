@@ -5,7 +5,7 @@ Circos is a handy program that can be helpful for generating circular density pl
  
 ![Example Circos plot](/09-generating-circos-plots/circos_plot_example.png)
 
-### Installing circos
+### Installing VCircos
 1. Download Circos on a **local** computer
     * Go to the [Circos Documentation](https://circos.ca/software/download/) to download the most recent version of circos. For example, at the time of writing this document, the most recent version is `circos-0.69-10.tgz`.
     * Once downloaded, run the following line of code to install it, creating a directory `circos-0.69-10/`:
@@ -37,7 +37,7 @@ Circos is a handy program that can be helpful for generating circular density pl
         circos-0.69-10/bin/circos -module
         ```
 
-### Input files for circos
+### Input files for Circos
 A few files are needed in order to run a circos plot:
 1. `karyotype.txt`
     * This is a `.txt` file that is used as the framework for the plot which contains the chromosome name/number, species, and length of the genome. For example, the text below is what the file would look like for *S. mutans*
