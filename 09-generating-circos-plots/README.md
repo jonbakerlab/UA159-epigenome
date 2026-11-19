@@ -1,6 +1,9 @@
 # 09. Generating circos plots
 
-Circos is a handy program that can be helpful for generating circular density plots of modification sites. This section provides as helpful documentation on how to generate a simple density circos plot.
+Circos is a handy program that can be helpful for generating circular density plots of modification sites. 
+![Example Circos plot](/09-generating-circos-plots/circos_plot_example.png)
+
+This section provides as helpful documentation on how to generate a simple density circos plot.
 
 ### Installing circos
 1. Download circos on a **local** computer
