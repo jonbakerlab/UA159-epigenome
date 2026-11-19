@@ -10,7 +10,7 @@ The `fully-hemi-methylation.py` script takes a +/- 12 base pair window surroundi
 A few notes on the input variables for this script:
 * `{motif}` is an input variable that requires a string of text for the motif sequence of interest.
   - Ex: `GATC`
-* `{mod_offset}` is an input variable that requires an **integer value** for the position of the modification site in the motif string in a **0-based indexing system**. This is also the same value as the `offset` value in the `modkit_motifs.tsv` file exported by `modkit find-motifs`.
+* `{mod_offset}` is an input variable that requires an **integer value** for the position of the modification site within the motif string in a **0-based indexing system**. This is also the same value as the `offset` value in the `modkit_motifs.tsv` file exported by `modkit find-motifs`.
   - Ex: For the input motif sequence `GATC`, the `{mod_offset}` for the methylated "A" is `1`.
 
 
