@@ -30,4 +30,4 @@ The bedMethyl file does not have any headers to the columns, however, their mean
 | 5mC | m | 5-methylcytosine |
 | 4mC | 21839 | N4-methylcytosine|
 
-More modifications and their associated ID nomenclature are detailed in the [Dorado documentation](https://software-docs.nanoporetech.com/dorado/latest/basecaller/mods/).
+More modifications and their associated ID nomenclature are detailed in the [Dorado Documentation](https://software-docs.nanoporetech.com/dorado/latest/basecaller/mods/).
