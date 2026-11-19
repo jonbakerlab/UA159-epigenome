@@ -40,9 +40,9 @@ Circos is a handy program that can be helpful for generating circular density pl
 ### Input files for Circos
 A few files are needed in order to run a circos plot:
 1. `karyotype.txt`
-    * This is a `.txt` file that is used as the framework for the plot which contains the chromosome name/number, species, and length of the genome. For example, the text below is what the file would look like for *S. mutans*
+    * This is a `.txt` file that is used as the framework for the plot which contains the chromosome name/number, species, and length of the genome. For example, the text below is what the file would look like for *S. mutans* UA159.
     ```    
-    chr - smutans smutans 0 2032925 black`
+    chr - smutans smutans 0 2032925 black
     ```
     
     **Note that this example is of a bacterial genome, i.e., only one chromosome is present and hence the 'chr' name for the chromosome. For a genome containing more than one chromosome (e.g. eukaryotes), numbering the chromosomes is required for the karyotype file to work.**
@@ -59,7 +59,7 @@ A few files are needed in order to run a circos plot:
     This file can be generated using the python code `bin_modification.py` that takes a modification table `.tsv` as an input file and automatically generate a `density.txt`.
 
 4. `circos.conf`
-    * Finally, Circos runs and generates a plot via interpreting a configuration file `.conf`, which in essence is a file with text formatted in its own language to generate highly customizable plots. A file is provided (`circos_example.conf`) to create three concentric density plot of the methylation sites found in *S. mutans*. This file is can be used as a template with comments, denoted by `#`, to help guide users to modulate and change the circos plot as needed.
+    * Finally, Circos runs and generates a plot via interpreting a configuration file `.conf`, which in essence is a file with text formatted in its own language to generate highly customizable plots. A file is provided (`circos_example.conf`) to create three concentric density plot of the methylation sites found in *S. mutans* UA159. This file is can be used as a template with comments, denoted by `#`, to help guide users to modulate and change the circos plot as needed.
 
 ### Run Circos
 ```sh
