@@ -5,7 +5,7 @@
 samtools fastq {.bam} -T MM,ML > {.fastq}
 ```
 
-The `-T MM,ML` flag retains all modification base types and probability information **on a per read basis** when converting from `.bam` to `.fastq`. More information on the flags and their meaning can be found in the [Modified Basecalling](https://software-docs.nanoporetech.com/dorado/latest/basecaller/mods/#sam-tags-mm-ml) page in the Dorado documentation.
+The `-T MM,ML` flag retains all modification base types and probability information on a **per read basis** when converting from `.bam` to `.fastq`. More information on the flags and their meaning can be found in the [Modified Basecalling](https://software-docs.nanoporetech.com/dorado/latest/basecaller/mods/#sam-tags-mm-ml) page in the Dorado documentation.
 
 2. Map the `.fastq` to a `.mapped.bam` file using a pipeline of `minimap2` and `samtools`: 
 ```sh
