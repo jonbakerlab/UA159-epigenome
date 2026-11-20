@@ -25,8 +25,6 @@ bwa-mem2 index {ref.fna}
 With all of the `.mapped.bam` files for each sample, `subreads featureCOunts` can be used to generate the gene expression matrix (featureCounts table) so be inputted and analyzed by deseq2. The function can be run as follows:
 
 ```sh
-#!/bin/bash
-conda activate subread_env
 srun --cpus-per-task 4 featureCounts \
     -a {ref.gtf} \
     -t gene \
@@ -45,8 +43,6 @@ With the outputted `featureCounts.txt` file, it can be formatted properly manual
 | Geneid | sample1_1 | sample1_2 | sample1_3 | sample2_1 | sample2_2 | sample2_3 | sampleN | ... |
 |--------|-----------|-----------|-----------|-----------|-----------|-----------|---------|-----|
 | SMU_RS00005 | 18 | 14 | 20 | 83 | 35 | 40 | n | ... | 
-
-**Note the flag `-L`, which is important as it signifies that these are long read sequences. This applies for reads that are sequenced on a nanopore, whereas, if it was an illumina sequence, the sequences are short reads.**
 
 ## Run deseq2 on R
 With the `featureCounts.txt` file properly formatted, it can then be run in `R` to perform a deseq2 analysis via `deseq2-pairwise-comparison.R` To properly run the script the following lines must be edited to apply to work for the `featureCounts.txt` input file:
