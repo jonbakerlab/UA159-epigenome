@@ -6,7 +6,7 @@ Circos is a handy program that can be helpful for generating circular density pl
 ![Example Circos plot](/09-generating-circos-plots/circos_plot_example.png)
 
 ### Installing Circos
-1. Download Circos on a **local** computer
+1. Download Circos on a **local** computer:
     * Go to the [Circos Documentation](https://circos.ca/software/download/) to download the most recent version of circos. For example, at the time of writing this document, the most recent version is `circos-0.69-10.tgz`.
     * Once downloaded, run the following line of code to install it, creating a directory `circos-0.69-10/`:
     ```sh
