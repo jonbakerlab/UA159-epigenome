@@ -22,7 +22,7 @@ modkit pileup -t {threads} {.mapped.bam} pileup.bed -r {ref.fna} --filter-thresh
 The thread count `-t` can be adjusted as needed.
 
 ## Additional information
-The bedMethyl file does not have any headers to the columns, however, their meaning can be deciphered using the `modkit` documentation linked above. It is important to note that the 4th column is the identified for what the modification was detected, however they have their own ID nomenclature for denoting the modifications. Here, looking at the methylation modifications specifically, they are as follows:
+The bedMethyl file does not have any headers to the columns, however, their meaning can be deciphered using the `modkit` documentation linked above. It is important to note that the 4th column is the identified for what the modification was detected, however they have their own ID nomenclature, known as **SAM codes**, for denoting the modifications. Here, looking at the methylation modifications specifically, they are as follows:
 
 | Modification | Code | Description |
 |--------------|------|-------------|
