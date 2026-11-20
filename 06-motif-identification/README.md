@@ -23,9 +23,9 @@ The flag `--degenerate` allows for this function to identify IUPAC nomenclature.
 
 2. Convert the `.tsv` file to a `.bed` file containing the location of the modified bases in the genome:
 ```sh
-awk 'NR>1 {print $1"\t"$5"\t"$5+1}' {motif_sites.tsv} > {modification_sites.bed}
+awk 'NR>1 {print $1"\t"$5+0"\t"$5+1}' {motif_sites.tsv} > {modification_sites.bed}
 ```
-The part `'NR>1 {print $1"\t"$5"\t"$5+1}'` must be adjusted to accommodate the position of the modification site in the motif sequence.
+In `'NR>1 {print $1"\t"$5+0"\t"$5+1}'`, the `+0` and `+1` must be adjusted to accommodate the position of the modification site in the motif sequence.
 
 3. Run `modkit extract full` to generate a file (`{extracts.tsv}`) containing analytics of the MM/ML values:
 ```sh
