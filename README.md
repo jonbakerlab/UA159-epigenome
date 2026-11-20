@@ -36,6 +36,7 @@ Start with the individual section READMEs for commands, dependencies, and input 
 | subread featurCounts | 2.0.6 |
 | modkit |  0.6.4 |
 | snippy | 4.6.0 |
+| seqkit | 2.9.0 |
 
 | **Python packages** | **Version** |
 |---------------------|-------------|
