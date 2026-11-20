@@ -25,7 +25,7 @@ bwa-mem2 index {ref.fna}
 With all of the `.mapped.bam` files for each sample, `subreads featureCOunts` can be used to generate the gene expression matrix (featureCounts table) so be inputted and analyzed by deseq2. The function can be run as follows:
 
 ```sh
-srun --cpus-per-task 4 featureCounts \
+srun featureCounts \
     -a {ref.gtf} \
     -t gene \
     -g gene_id \
